@@ -39,7 +39,7 @@ cd ~/Documents/omarchy-paco/hypr
 # Crear enlaces simbólicos para todos los archivos .conf de Hyprland
 for file in *.conf; do
     if [ -f "$file" ]; then
-    ln -s "$(pwd)/$file" ~/.config/hypr/
+    ln -sf "$(pwd)/$file" ~/.config/hypr/
     fi
 done
 
